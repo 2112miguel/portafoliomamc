@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Space Portfolio",
+  title: "Miguel Angel Portfolio",
   description: "This is my portfolio",
 };
 
