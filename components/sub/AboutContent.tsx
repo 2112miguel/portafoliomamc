@@ -46,12 +46,7 @@ const AboutContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          {">"} Hi I&apos;m Miguel, .NET professional Developer with 5 years of experience in designing and
-          implementing full-stack web applications. Proficient in ASP.NET, C#, and SQL Server,
-          with a strong foundation in Angular, NoSQL, SOLID Principles, Design Patterns,
-          Object-Oriented Programming (OOP),web services, microservices and relational
-          databases. With a background in network engineering for 3 years and knowledge in
-          cloud platforms such as Azure, AWS, and GCP.
+          {">"} Hi Welcome to my portfolio I&apos;m Miguel a .NET Developer with 5 years of experience in full-stack web application development. Skilled in ASP.NET, C#, SQL Server, Angular, and NoSQL. Proficient in OOP, SOLID principles, Design Patterns, web services, and microservices. Strong background in network engineering and experience with Azure, AWS, and GCP.
         </motion.p>
         {/* <motion.a
           variants={slideInFromLeft(1)}
