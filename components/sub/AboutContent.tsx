@@ -15,7 +15,7 @@ const AboutContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-col items-center justify-center gap-12 px-6 pt-32 md:flex-row md:px-12 lg:px-20 lg:pt-40 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -30,7 +30,7 @@ const AboutContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
         >
           <span>
             Web
@@ -46,7 +46,7 @@ const AboutContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          {">"} Hi Welcome to my portfolio I&apos;m Miguel a .NET Developer with 5 years of experience in full-stack web application development. Skilled in ASP.NET, C#, SQL Server, Angular, and NoSQL. Proficient in OOP, SOLID principles, Design Patterns, web services, and microservices. Strong background in network engineering and experience with Azure, AWS, and GCP.
+          {">"} Full-Stack .NET Developer with 7+ years of experience building enterprise applications, RESTful APIs, and microservices with C#, ASP.NET Core, SQL Server, and JavaScript. I create responsive web experiences with Angular, React, and Vue.js, and deliver scalable solutions through Agile collaboration, Azure DevOps, and CI/CD practices.
         </motion.p>
         {/* <motion.a
           variants={slideInFromLeft(1)}
@@ -58,7 +58,7 @@ const AboutContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="w-full max-w-[650px] h-full flex justify-center items-center"
       >
         <Image
           src="/mainIconsdark3.svg"
