@@ -14,6 +14,12 @@ const Projects = () => {
       </h1>
       <div className="grid w-full max-w-7xl grid-cols-1 gap-8 px-6 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
         <ProjectCard
+          src="/pokedex.png"
+          title="Pokédex"
+          description="Interactive Pokédex application featuring Pokémon search, species navigation, detailed statistics, and a responsive interface."
+          url="https://pokedex-six-sandy-82.vercel.app/"
+        />
+        <ProjectCard
           src="/tumusico.png"
           title="TuMusAh"
           description="Web Application for musicians develop using ReactJS, JavaScript, CSS, MongoDB, NodeJS, Express, HTML, CSS and Bootstrap."
