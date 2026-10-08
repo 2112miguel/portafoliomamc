@@ -1,239 +1,41 @@
-import { url } from "inspector";
+export interface Skill {
+  skill_name: string;
+  image: string;
+}
 
-export const Skill_data = [
-    {
-      skill_name: "Html 5",
-      Image: "/html.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Css",
-      Image: "/css.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Java Script",
-      Image: "/js.png",
-      width: 65,
-      height: 65,
-    },
-    {
-      skill_name: "React",
-      Image: "/react.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Type Script",
-      Image: "/ts.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Microsoft SQL Server",
-      Image: "/icons8-sql-server-480.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: ".NET",
-      Image: "/NET core.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "C#",
-      Image: "/icons8-c-250.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Node js",
-      Image: "/node-js.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Mongo db",
-      Image: "/mongodb.png",
-      width: 40,
-      height: 40,
-    },
-  
-  ];
-  
-  export const Socials = [
-    {
-      name: "GitHub",
-      src: "/gitwhite.png",
-      url: "https://github.com/2112miguel",
-    },
-    {
-      name: "LinkIn",
-      src: "/icons8-linkedin-480.png",
-      url: "https://www.linkedin.com/in/miguelanmorenocontreras/",
-    },
-  ];
-  
-  
-  
-  export const Frontend_skill = [
-    {
-      skill_name: "Html 5",
-      Image: "/html.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Css",
-      Image: "/css.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Java Script",
-      Image: "/js.png",
-      width: 65,
-      height: 65,
-    },
-    {
-      skill_name: "Tailwind Css",
-      Image: "/tailwind.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Material UI",
-      Image: "/mui.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "React",
-      Image: "/react.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Redux",
-      Image: "/redux.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "React Query",
-      Image: "/reactquery.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Type Script",
-      Image: "/ts.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Next js 13",
-      Image: "/next.png",
-      width: 80,
-      height: 80,
-    },
-  ];
-  
-  export const Backend_skill = [
-    {
-      skill_name: "Node js",
-      Image: "/node-js.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Express js",
-      Image: "/express.png",
-      width: 80,
-      height: 80,
-    },
-    {
-      skill_name: "Mongo db",
-      Image: "/mongodb.png",
-      width: 40,
-      height: 40,
-    },
-    {
-      skill_name: "Fire base",
-      Image: "/Firebase.png",
-      width: 55,
-      height: 55,
-    },
-    {
-      skill_name: "Postger SQL",
-      Image: "/postger.png",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "My SQL",
-      Image: "/mysql.png",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "Prisma",
-      Image: "/prisma.webp",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "Graphql",
-      Image: "/graphql.png",
-      width: 80,
-      height: 80,
-    },
-  ];
-  
-  export const Full_stack = [
-    {
-      skill_name: "React Native",
-      Image: "/ReactNative .png",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "Tauri",
-      Image: "/tauri.svg",
-      width: 70,
-      height: 70,
-    },
-    {
-      skill_name: "Docker",
-      Image: "/docker.webp",
-      width: 70,
-      height: 70,
-    },
-  
-    {
-      skill_name: "Figma",
-      Image: "/figma.png",
-      width: 50,
-      height: 50,
-    },
-  
-  ];
-  
-  
-  
-  export const Other_skill = [
-    {
-      skill_name: "Go",
-      Image: "/go.png",
-      width: 60,
-      height: 60,
-    },
-  ];
-  
-  
-  
-  
-  
+export const skillPyramid: Skill[][] = [
+  [{ skill_name: ".NET Core", image: "/microsoft-dot-net-icon.png" }],
+  [
+    { skill_name: "C#", image: "/icons8-c-250.png" },
+    { skill_name: "Azure", image: "/icons8-azure-96.png" },
+    { skill_name: "SQL Server", image: "/icons8-sql-server-480.png" },
+  ],
+  [
+    { skill_name: "Angular", image: "/Angular.png" },
+    { skill_name: "React", image: "/react.png" },
+    { skill_name: "REST APIs", image: "/icons8-postman-inc-96.png" },
+    { skill_name: "Azure DevOps", image: "/icons8-azure-devops-48.png" },
+  ],
+  [
+    { skill_name: "JavaScript", image: "/js.png" },
+    { skill_name: "TypeScript", image: "/ts.png" },
+    { skill_name: "Git", image: "/icons8-git-96.png" },
+    { skill_name: "Docker", image: "/docker.webp" },
+    { skill_name: "Bootstrap", image: "/Bootstrap.png" },
+    { skill_name: "HTML5", image: "/html.png" },
+    { skill_name: "CSS3", image: "/css.png" },
+  ],
+];
+
+export const Socials = [
+  {
+    name: "GitHub",
+    src: "/gitwhite.png",
+    url: "https://github.com/2112miguel",
+  },
+  {
+    name: "LinkedIn",
+    src: "/icons8-linkedin-480.png",
+    url: "https://www.linkedin.com/in/miguelanmorenocontreras/",
+  },
+];
