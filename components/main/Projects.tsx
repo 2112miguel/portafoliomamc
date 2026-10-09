@@ -26,9 +26,9 @@ const Projects = () => {
           url="https://music-app-front-end.vercel.app"
         />
         <ProjectCard
-          src="/chanllegek.png"
-          title="Challenge K"
-          description="A simple Code Challenge"
+          src="/form-builder.png"
+          title="React Form Builder"
+          description="Interactive form builder with dynamic fields, real-time preview, validation controls, and submission feedback."
           url="https://challenge-k.vercel.app/"
         />
         <ProjectCard
