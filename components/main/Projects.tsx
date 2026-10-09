@@ -27,9 +27,9 @@ const Projects = () => {
         />
         <ProjectCard
           src="/chanllegek.png"
-          title="Chanllege K"
+          title="Challenge K"
           description="A simple Code Challenge"
-          url=""
+          url="https://challenge-k.vercel.app/"
         />
         <ProjectCard
           src="/devtoClon.png"

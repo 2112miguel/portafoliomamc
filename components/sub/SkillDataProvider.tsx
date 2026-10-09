@@ -30,7 +30,9 @@ const SkillDataProvider = ({ src, name, index} : Props) => {
     animate={inView ? "visible" : "hidden"}
     custom={index}
     transition={{delay: index * animationDelay, duration: 0.35}}
-    className="group flex w-[88px] flex-col items-center gap-2 rounded-xl border border-white/10 bg-white/5 p-3 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-cyan-400/60 hover:bg-cyan-400/10 sm:w-[104px]"
+    className="group flex h-[72px] w-[72px] items-center justify-center rounded-xl border border-white/10 bg-white/5 p-3 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-cyan-400/60 hover:bg-cyan-400/10 sm:h-[88px] sm:w-[88px]"
+    title={name}
+    aria-label={name}
   >
     <Image
       src={src}
@@ -39,9 +41,6 @@ const SkillDataProvider = ({ src, name, index} : Props) => {
       alt={`${name} icon`}
       className="h-11 w-11 object-contain sm:h-14 sm:w-14"
     />
-    <span className="text-center text-xs font-medium text-gray-200 group-hover:text-white">
-      {name}
-    </span>
   </motion.div>
   )
 }
