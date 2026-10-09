@@ -32,9 +32,9 @@ const Projects = () => {
           url="https://challenge-k.vercel.app/"
         />
         <ProjectCard
-          src="/devtoClon.png"
-          title="Clon DevTo"
-          description="A simple clon from this incredible page"
+          src="/dev-community.png"
+          title="DEV Community Clone"
+          description="Community platform clone with publications, tags, navigation, and local persistence built with React and Vite."
           url="https://react-devto-clon.vercel.app"
         />
       </div>
