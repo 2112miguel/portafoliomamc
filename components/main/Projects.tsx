@@ -14,6 +14,13 @@ const Projects = () => {
       </h1>
       <div className="grid w-full max-w-7xl grid-cols-1 gap-8 px-6 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
         <ProjectCard
+          src="/tarnished-compendium-home.png"
+          images={["/tarnished-compendium-home.png", "/tarnished-compendium-bosses.png"]}
+          title="Tarnished Compendium"
+          description="Dark fantasy companion with searchable Elden Ring data, boss records, equipment, areas, and guides powered by an API."
+          url="https://eldeneingapp.vercel.app/"
+        />
+        <ProjectCard
           src="/pokedex.png"
           title="Pokédex"
           description="Interactive Pokédex application featuring Pokémon search, species navigation, detailed statistics, and a responsive interface."
